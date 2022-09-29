@@ -1,5 +1,7 @@
 package task;
 
+import java.util.Objects;
+
 public class Author {
     private final String name;
     private final String surname;
@@ -12,16 +14,20 @@ public class Author {
         return name;
     }
     public String getSurName(){
+
         return surname;
     }
 
+    public  String gerFullName(){
+        return name + surname;
+    }
+
+    @Override
+
+    public  boolean equals(Object obj){return equals(obj);}
     @Override
     public String toString() {
-        return "Author{"+
-                "name='" + name + '\''+
-                " , surname='" + surname + '\''+
-                '}';
-
+        return "Автор " + this.name + " " + this.surname;
 
     }
 }
