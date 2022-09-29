@@ -22,7 +22,6 @@ public class Author {
         return name + surname;
     }
 
-
     @Override
 
     public  boolean equals(Object obj){return equals(obj);}
